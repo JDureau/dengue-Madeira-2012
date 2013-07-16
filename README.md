@@ -51,5 +51,29 @@ the predicted number of sever dengue cases occurring each week is the following:
 ![data](https://raw.github.com/JDureau/dengue-Madeira-2012/master/images/forecast.png?login=JDureau&token=e66b78f7f11574ef08f2b064073d0c67)
 
 
+For the sake of transparency, and to foster further improvements of this preliminary exploration, this repository provides
+the means to easily reproduce the presented results. It relies on the [library of inference methods][5]
+developed in collaboration with Sébastien Ballesteros as part the the [PLOM.IO project][6].
+
+Reproducing the results:
+------------------------
+
+Data is contained in the data folder, in the csv format. Additionally, the folder 2-strains contains json files that 
+define a model and link it to the data, following the [PLOM.IO grammar][6]. To generate the code and play with the model
+yourself, simply [install the package][7], and compile the model with:
+
+    plom build -t map.json --local
+
+The joint posterior density of paths and parameters can be explored with:
+
+    plom pipe map.json | ./kmcmc --full -M 10000 -n 200
+    
+From these sampled trajectories, forecasts can be simulated with:
+
+    plom predict mle.json -n 303 -X X_1.csv -T trace_1.csv | ./simul sde -o 303 -D 470  --traj 
+    
+
+
+
 [1]: http://www.ecdc.europa.eu/en/press/news/Lists/News/ECDC_DispForm.aspx?List=32e43ee8-e230-4424-a783-85742124029a&ID=845        "Dengue epidemic in Madeira"
 [2]: http://www.epiwork.eu/wp-content/uploads/2010/03/role.pdf "Aguiar et al."
