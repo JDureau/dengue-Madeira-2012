@@ -42,7 +42,7 @@ perfectly incorporated in the model. An additional source of stochasticity calle
 this uncertainty.
 
 Under these assumptions, the data from the 2012 epidemic can be used to reconstruct the current state of immunity of 
-the population of Maidera, and to project its evolution. A Bayesian approach is followed, to reflect the 
+the population of Madeira, and to project its evolution. A Bayesian approach is followed, to reflect the 
 available information on the respective lengths of the infectivity and cross-immunity periods as well as the uncertainty 
 on the proportion of asymptomatics and initial state of the population immunity. We nonetheless consider that only less
 than 5% of the population had already been infected with dengue before September 2012. Under these assumptions, 
