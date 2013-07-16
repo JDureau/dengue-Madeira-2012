@@ -16,9 +16,9 @@ has been recorded.
 ![data](https://raw.github.com/JDureau/dengue-Madeira-2012/master/images/data.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
 
 
-Although multiple and crucial aspects of dengue transmission are still to be explored, some epidemiologists argue that severe cases 
-correspond to secondary infections. After having previsouly been infected with one of the 4 dengue strains,
-an individual that is re-infected with another strain would have a much higher probability of developing 
+Although multiple and crucial aspects of dengue transmission are still to be explored, some epidemiologists argue that
+severe cases [are more likely to correspond to secondary infections][3]. After having previously been infected with one of
+the 4 dengue strains, an individual that is re-infected with another strain would have a much higher probability of developing 
 severe symptoms as hemorragic dengue fever. If we follow this assumption, and consider that all infections that occured
 in 2012 were primary infection, there is a risk for severe cases in 2013 if any of the primary infected gets re-infected.
 
