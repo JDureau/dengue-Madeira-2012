@@ -13,6 +13,7 @@ In September 2012 a first epidemic occured in Europe, on the Portughese island o
 over 3 months][1]. Among these case, a few individuals were hospitalised for mild symptoms of fever but no severe case
 has been recorded. 
 
+![data](https://raw.github.com/JDureau/dengue-Madeira-2012/master/images/data.png?login=JDureau&token=c5b1e3d648591265b128978f10a0bcee)
 
 
 Although dengue remains mysterious on multiple and crucial aspects, some epidemiologists argue that severe cases 
@@ -27,12 +28,27 @@ and can be used to forecast coming epidemics while reflecting the different sour
 multi-strain model that has been introduced by [Aguiar et al][2] to study dengue dynamics in South-East Asia. This model 
 accounts for 
 
-> strain competition: we know that four strains of dengue coexist
->
-> cross immunity: after recovering from being infected with one strain, individuals are resistant to all strains
-for a short period
->
-> under-reporting: manu
+* strain competition: we know that four strains of dengue coexist
+* cross immunity: after recovering from a dengue infection, individuals are resistant to all strains for a short period
+* under-reporting: a high but unknown proportion of individuals infected with dengue do not develop symptoms. They are 
+generally not recorded, but they are nevertheless infectious.
+* seasonality: dengue transmission is highly infuenced by temperature and humidity through the concentration of 
+mosquitoes.
+* immigration: travelers being infected in other parts of the world are regularly identified in Maidera.
+* demographic stochasticity: disease transmissions are a random process, and this randomness needs to be reflected when 
+construcing past and future scenarios of the epidemic. Specially in a small island like Madeira.
+* environmental stochasticty: all factors playing a role on dengue transmissions, and their variability, may not be
+perfectly incorporated in the model. An additional source of stochasticity called environmental is meant to reflect 
+this uncertainty.
+
+Under these assumptions, the data from the 2012 epidemic can be used to reconstruct the current state of immunity of 
+the population of Maidera, and to project its evolution. A Bayesian approach is followed, to reflect the 
+available information on the respective lengths of the infectivity and cross-immunity periods as well as the uncertainty 
+on the proportion of asymptomatics and initial state of the population immunity. We nonetheless consider that only less
+than 5% of the population had already been infected with dengue before September 2012. Under these assumptions, 
+the predicted number of sever dengue cases occurring each week is the following:
+
+![data](https://raw.github.com/JDureau/dengue-Madeira-2012/master/images/forecast.png?login=JDureau&token=e66b78f7f11574ef08f2b064073d0c67)
 
 
 [1]: http://www.ecdc.europa.eu/en/press/news/Lists/News/ECDC_DispForm.aspx?List=32e43ee8-e230-4424-a783-85742124029a&ID=845        "Dengue epidemic in Madeira"
