@@ -66,13 +66,12 @@ yourself, simply [install the package][7], and compile the model with:
 
 The joint posterior density of paths and parameters can be explored with:
 
-    plom pipe map.json | ./kmcmc --full -M 10000 -n 200
+    plom pipe map.json | ./pmcmc --full -M 10000 -J 2000 -a 0.98 -N 8 -n 200
     
 From these sampled trajectories, forecasts can be simulated with:
 
-    plom predict mle.json -n 303 -X X_1.csv -T trace_1.csv | ./simul sde -o 303 -D 470  --traj 
+    plom predict map.json -n 303 -X X_0.csv -T trace_0.csv | ./simul sde -o 303 -D 470  --traj 
     
-
 
 
 [1]: http://www.ecdc.europa.eu/en/press/news/Lists/News/ECDC_DispForm.aspx?List=32e43ee8-e230-4424-a783-85742124029a&ID=845        "Dengue epidemic in Madeira"
