@@ -15,38 +15,38 @@
     
     "I1": {
       "partition_id": "identical_population",
-      "transformation":"logit",
-      "min": 0,
-      "guess": 2e-06,
-      "max": 1,
+      "transformation":"scale_pow10_neg",
+      "min": 3,
+      "guess": 6,
+      "max": 8,
       "sd_transf": 0.01
     },
 
     "I2": {
       "partition_id": "identical_population",
-      "transformation":"logit",
-      "min": 0,
-      "guess": 2e-06,
-      "max": 1,
+      "transformation":"scale_pow10_neg",
+      "min": 3,
+      "guess": 6,
+      "max": 8,
       "sd_transf": 0.01
     },
 
     "R1": {
       "partition_id": "identical_population",
-      "transformation":"logit",
+      "transformation":"log",
       "min": 0,
-      "guess": 1e-5,
-      "max": 1,
-      "sd_transf": 0.01
+      "guess": 0,
+      "max": 0,
+      "sd_transf": 0.0
     },
 
     "R2": {
       "partition_id": "identical_population",
-      "transformation":"logit",
+      "transformation":"log",
       "min": 0,
-      "guess": 1e-5,
-      "max": 1,
-      "sd_transf": 0.01
+      "guess": 0,
+      "max": 0,
+      "sd_transf": 0.0
     },
 
     "S1": {
@@ -107,10 +107,10 @@
 
     "i": {
       "partition_id": "identical_population", 
-      "transformation": "log",
-      "min": 0,
-      "guess": 1e-07,
-      "max": 1e-03,
+      "transformation":"scale_pow10_neg",
+      "min": 3,
+      "guess": 6,
+      "max": 8,
       "sd_transf": 0.02
     },
 
@@ -177,10 +177,10 @@
         },
         "MadeiraSevereCases__ecdc__inc": {
           "transformation":"logit",
-          "min": 0.9,
+          "min": 1,
           "max": 1,
-          "guess": 0.95,
-          "sd_transf": 0.02
+          "guess": 1,
+          "sd_transf": 0.0
         }
       }
     },
