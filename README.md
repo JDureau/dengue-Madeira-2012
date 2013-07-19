@@ -20,11 +20,10 @@ Although multiple and crucial aspects of dengue transmission are still to be exp
 severe cases [are more likely to correspond to secondary infections][3]. After having previously been infected with one of
 the 4 dengue strains, an individual that is re-infected with another strain would have a much higher probability of developing 
 severe symptoms as hemorragic dengue fever. If we follow this assumption, and consider that all infections that occured
-in 2012 were primary infection, there is a risk for severe cases in 2013 if any of the primary infected gets re-infected.
+in 2012 were primary infections, there is a risk for severe cases in 2013 if any of the primary infected gets re-infected.
 
 
-We illustrate here how mechanistic models can encompass the complex and non-linear dynamics of epidemics, 
-and can be used to forecast coming epidemics while reflecting the different sources of uncertainty. We have extended a
+We illustrate here how mechanistic models can be used to forecast future epidemics while reflecting the different sources of uncertainty. We have extended a
 multi-strain model that had been introduced by [Aguiar et al][2] to study dengue dynamics in South-East Asia. Our model 
 accounts for 
 
@@ -52,7 +51,7 @@ the predicted number of sever dengue cases occurring each week is the following:
 
 
 For the sake of transparency, and to foster further improvements of this preliminary exploration, this repository provides
-the means to easily reproduce the presented results. It relies on the [library of inference methods][5]
+the means to easily reproduce the presented results. It relies on the [plom-pipe library of inference methods][4]
 developed in collaboration with Sébastien Ballesteros as part the the [PLOM.IO project][6].
 
 Reproducing the results:
@@ -77,5 +76,6 @@ From these sampled trajectories, forecasts can be simulated with:
 [1]: http://www.ecdc.europa.eu/en/press/news/Lists/News/ECDC_DispForm.aspx?List=32e43ee8-e230-4424-a783-85742124029a&ID=845        "Dengue epidemic in Madeira"
 [2]: http://www.epiwork.eu/wp-content/uploads/2010/03/role.pdf "Aguiar et al."
 [3]: http://www.ncbi.nlm.nih.gov/pubmed/20639791 "Dengue hemorrhagic fever and shock syndromes."
+[4]: https://github.com/plom-io/plom-pipe "plom-pipe"
 [6]: http://plom.io/cli/grammar "PLOM.IO grammar"
 [7]: http://plom.io/cli "workflow"
